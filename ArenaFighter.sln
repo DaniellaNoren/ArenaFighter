@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArenaFighter", "CharacterCreator\ArenaFighter.csproj", "{E18C4D32-13D9-4209-A5EF-7204A440006C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterCreator.Test", "CharacterCreator.Test\CharacterCreator.Test.csproj", "{A8511E63-6738-4E40-9CE6-61DC829F43BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E18C4D32-13D9-4209-A5EF-7204A440006C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18C4D32-13D9-4209-A5EF-7204A440006C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18C4D32-13D9-4209-A5EF-7204A440006C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18C4D32-13D9-4209-A5EF-7204A440006C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8511E63-6738-4E40-9CE6-61DC829F43BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8511E63-6738-4E40-9CE6-61DC829F43BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8511E63-6738-4E40-9CE6-61DC829F43BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8511E63-6738-4E40-9CE6-61DC829F43BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD6B7764-2C01-4B0A-9C6D-91E12BED98BC}
+	EndGlobalSection
+EndGlobal
