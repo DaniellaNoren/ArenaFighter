@@ -15,7 +15,7 @@ namespace CharacterCreator
             return new PlayerCharacter(characterInformationSupplier.GetAName(), 
                 characterInformationSupplier.GetALastName(), 
                 characterInformationSupplier.GetAnAge(), 
-                characterInformationSupplier.GetHealth(), characterInformationSupplier.GetSwiftness(), characterInformationSupplier.GetWeapons());
+                characterInformationSupplier.GetHealth(), characterInformationSupplier.GetSwiftness(), characterInformationSupplier.GetWeapons(), level: 1);
         }
     }
 

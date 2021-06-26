@@ -20,7 +20,10 @@ namespace ArenaFighter.Character
 
         private int level;
         public int Level {  get { return level;  } set { level += value; } }
- 
+
+        private int baseHealth;
+        public int BaseHealth { get { return baseHealth; } set { baseHealth = value * level; } }
+
         private int age;
         public int Age
         {
@@ -36,15 +39,14 @@ namespace ArenaFighter.Character
         private int health;
         public int Health { get { return health; } set { health = value; } }
 
-        private int baseHealth;
-        public int BaseHealth { get { return baseHealth * level; } set { baseHealth = value * level;  } }
+       
 
         private int experiencePoints;
 
         public int ExperiencePoints {  get { return experiencePoints;  } set { experiencePoints = value; } }
 
         private int swiftness;
-        public int Swiftness { get { return swiftness * level; } set { swiftness = value * level; } }
+        public int Swiftness { get { return swiftness; } set { swiftness = value * level; } }
 
         private Weapon[] weapons;
         public Weapon[] Weapons { get { if (weapons == null) throw new Exception(); return weapons; } set { weapons = value; } }
@@ -91,6 +93,8 @@ namespace ArenaFighter.Character
             this.CharacterStatus = characterStatus;
             DrawWeapon(0);
             this.Level = level;
+            this.BaseHealth = health;
+
         }
 
         public void DrawWeapon(int index)
@@ -107,7 +111,7 @@ namespace ArenaFighter.Character
 
             foreach (Weapon w in Weapons)
             {
-                s.Append(w).Append(",");
+                s.Append(w).Append("|");
             }
 
             return s.ToString();
